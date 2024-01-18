@@ -146,7 +146,6 @@
   border: 2px solid var(--accent-Color);
   background-color: var(--background-color);
   margin-block-end: 50px;
-  
 }
 
 .title__card {
@@ -215,55 +214,6 @@
   border-color: var(--accent-Color);
 }
 
-.card__icon-button:hover, .main-body {
-  fill: var(--accent-Color);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.card__icon-button:hover .main-body {
-  fill: var(--accent-Color);
-  transition: fill 0.3s linear 0.05s;
-} 
-
-.card__icon-button:active .main-body {
-  fill: var(--heart-color-body);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.card__icon-button:hover .core {
-  fill: var(--accent-Color);
-  transition: fill 0.3s linear;
-}
-
-.card__icon-button:active .core {
-  fill: var(--heart-color-body);
-  transition: fill 0.3s linear;
-}
-
-
-.like-icon.is-liked .main-body {
-  fill: var(--heart-color-body);
-  transition: fill 0.3s linear 0.05s; 
-}
-
-.like-icon.is-liked .core { 
-  fill: var(--heart-color-body);
-  transition: fill 0.3s linear; 
-}
-
-.like-icon.is-liked .contour { 
-  fill: var(--heart-color-body);
-  transition: fill 0.3s linear 0.06s; 
-}
-
-.is-liked .heart {
-  animation: like-skale 0.3s ease-in 0.1s alternate;
-}
-
-.is-liked .sparks {
-  animation: like-spark 0.3s ease-in 0.3s alternate;
-}
-
 .card__like-button {
   width: 128px;
 }
@@ -294,8 +244,7 @@
  background-size: cover;
 }
 
-/*.card__like-button,
-.ok*/ .button {
+.button {
   position: relative;
   display: flex;
   justify-content: center;
@@ -313,16 +262,12 @@
   transition: box-shadow 0.3s ease-in-out; 
 }
 
-/*.card__like-button:focus,
-.save__button:focus,
-.ok:focus*/ .button:focus {
+.button:focus {
   outline: none;
   box-shadow: 2px 2px 0px 0px var(--accent-Color);
 }
 
-/*.card__like-button:before,
-.save__button:before,
-.ok:before*/ .button::before {
+.button::before {
   content: '';
   position: absolute;
   display: block;
@@ -335,9 +280,7 @@
   transition: 0.5s ease-in-out;
 }
 
-/*.card__like-button:hover:before,
-.save__button:hover:before,
-.ok:hover:before*/ .button:hover::before {
+.button:hover::before {
   transform: scalex(1);
   width: 100%;
 }
