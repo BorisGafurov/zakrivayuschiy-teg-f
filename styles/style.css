@@ -264,6 +264,10 @@
   animation: like-spark 0.3s ease-in 0.3s alternate;
 }
 
+.card__like-button {
+  width: 128px;
+}
+
 .like-icon {
   width: 39px;
   height: 36px;
@@ -284,13 +288,6 @@
   mix-blend-mode: difference;
   color: var(--button-color);
   z-index: 2;
-}
-
-
-.floppy {
-  width: 28px;
-  height: 28px;
-  fill: var(--accent-Color);
 }
 
 .floppy__use {
@@ -370,8 +367,8 @@
   color: var(--button-color);
   stroke: var(--button-color);
   fill: var(--accent-Color);
-  width: 24px;
-  height: 21px;
+  width: 20px;
+  height: 20px;
 }
 
 .window {
@@ -490,6 +487,10 @@ dialog::backdrop {
 
   .text__card {
     border-top: 2px solid var(--accent-Color);
+  }
+
+  .ok {
+    width: 276px;
   }
 
 }
